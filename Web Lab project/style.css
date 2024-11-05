@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary-color:orange ;
+    --primary-color:blue;
     --light-color:#f4f4f6;
     --dark-color:#111;
 }
@@ -13,8 +13,8 @@ body{
     font-family: 'Inter';
     font-size: 20px;
     line-height: 1.5;
-    background: white;
-
+  background-color:cornflowerblue;
+  background-size:cover;
 }
 
 a{
@@ -35,8 +35,8 @@ img{
 /* Navigation bar */
 
 .navbar{
-    background:url("images/header.jpg") no-repeat;
-    background-size: auto 600px;
+    background:url("images/headerpattern.jpg") repeat;
+   
     display:flex;
     align-items:center;
     
@@ -81,7 +81,9 @@ display: flex;
    background-position: center bottom ;
    height:2000px;
   
-   background-color:#ffe5c3;
+   background-color:#cafcff;
+   
+   
 }
 .aboutbody{
     padding-left: 20px;
@@ -90,7 +92,7 @@ display: flex;
    background-position: center bottom ;
    height:2000px;
    animation: transitionIn 0.75s;
-   background-color:#ffe5c3;
+   background-color:aliceblue;
 }
 
 .resultcontent{

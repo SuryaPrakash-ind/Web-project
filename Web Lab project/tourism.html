@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top destinations in Australia with images and descriptions of places like Sydney Opera House, Great Barrier Reef, Uluru, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
+    
+    <title>Top Places to Visit in Australia</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+            background-image: url(https://images.homhero.com.au/1920x0/10991ec2-c20f-4ecc-beaa-f91afc866e1b/listing/58/5fd865a0-52dd-44bf-8893-addd9dd40613.jpg);
+            background-size: cover;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2b87d2;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        /* Main Section Styles */
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #2b87d2;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .destination {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .destination:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .destination-description {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .destination-description p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Button Styles */
+        .destination a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #2b87d2;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .destination a:hover {
+            background-color: #1c63a1;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .destination {
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .destination img {
+                height: 250px;
+            }
+        }
+        .navbar{
+            background:url("images/headerpattern.jpg") repeat;
+   
+   display:flex;
+   align-items:center;
+   
+   margin:40px;
+}
+
+.container{
+    display:flex;
+   background-color:  #ffe5c3;
+    align-items: center;
+}
+
+.navbar .main-menu ul{
+display: flex;
+}
+
+:root{
+    --primary-color:blue;
+    --light-color:#f4f4f6;
+    --dark-color:#111;
+}
+
+.navbar ul li a{
+    padding: 10px 20px;
+    display:block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color:var(--primary-color);
+}
+a{
+    font-family: 'Inter';
+    text-decoration: none;
+    color : #333;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+        <div class="logo">
+            <a href="Mainpage.html">
+                <img src="images/logo.png" alt="logo" height="150px" width="150px" style="float:left;margin-right:10px;">
+            </a>
+        </div>
+
+        <div class="main-menu">
+            <ul>
+                <li>
+                    <a href="Mainpage.html">HOME</a>
+                </li>
+            <li>
+           
+                <a href="about.html">ABOUT</a>
+            
+            </li>
+            <li>
+                <a href="festival.html">FESTIVALS</a>
+            </li>
+            <li>
+                <a href="tourism.html">TOURISM</a>
+            </li>
+            </ul>
+        </div>
+    
+</nav>
+<header>
+    <h1>Top Places to Visit in Australia</h1>
+</header>
+
+<section>
+    <div class="destination">
+        <h2>Sydney Opera House & Sydney Harbour</h2>
+        <img src="https://th.bing.com/th/id/OIP.GSfQ6uzFyb_Gv8BLnQGfoQHaEK?rs=1&pid=ImgDetMain" alt="Sydney Opera House">
+        <div class="destination-description">
+            <p>No trip to Australia is complete without visiting Sydney's iconic Opera House and the stunning Sydney Harbour. The Opera House, with its unique sail-like architecture, is one of the most recognizable buildings in the world. The surrounding harbor offers scenic views, vibrant cafes, and some of the best walking paths.</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Great Barrier Reef, Queensland</h2>
+        <img src="https://th.bing.com/th/id/OIP.fX7n8pbZtfuJT7dnqwQRhQHaE7?rs=1&pid=ImgDetMain" alt="Great Barrier Reef">
+        <div class="destination-description">
+            <p>The Great Barrier Reef is a wonder of the natural world, stretching over 2,300 kilometers along the coast of Queensland. It's a haven for divers and snorkelers, offering an underwater paradise filled with colorful coral, diverse marine life, and crystal-clear waters.</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Uluru (Ayers Rock), Northern Territory</h2>
+        <img src="https://i.redd.it/crbk7ukldha11.jpg" alt="Uluru">
+        <div class="destination-description">
+            <p>Uluru is a spiritual and cultural landmark located in the heart of the Australian outback. This massive sandstone monolith, often referred to as Ayers Rock, stands tall at 348 meters and changes color at sunrise and sunset.</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Great Ocean Road, Victoria</h2>
+        <img src="https://lp-cms-production.imgix.net/2019-06/38297050.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4" alt="Great Ocean Road">
+        <div class="destination-description">
+            <p>The Great Ocean Road is one of the world’s most scenic coastal drives. Stretching along the south-eastern coast of Australia, the road offers breathtaking views of dramatic cliffs, sandy beaches, and lush rainforests. Highlights include the Twelve Apostles rock formations, Loch Ard Gorge, and the coastal town of Lorne.</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Tasmania’s Cradle Mountain</h2>
+        <img src="https://th.bing.com/th/id/OIP.Bw_EEYvHJSRYkQHke6_Z1AHaEo?rs=1&pid=ImgDetMain" alt="Cradle Mountain">
+        <div class="destination-description">
+            <p>Tasmania is home to some of Australia's most pristine wilderness, and Cradle Mountain is a standout. Part of the Cradle Mountain-Lake St Clair National Park, this stunning peak offers hiking, wildlife spotting, and jaw-dropping scenery.</p>
+          
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>The Whitsundays, Queensland</h2>
+        <img src="https://i.pinimg.com/originals/7f/d0/78/7fd078c835b7c9550b3bb2643020aa9d.jpg" alt="cs">
+        <div class="destination-description">
+            <p>The Whitsunday Islands are a group of 74 tropical islands located off the coast of Queensland, known for their white sand beaches and crystal-clear waters. Whitehaven Beach, in particular, is famous for its silica sand, often considered some of the purest in the world.</p>  
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Melbourne’s Laneways and Street Art</h2>
+        <div class="destination-description">
+            <img src="https://www.australia-backpackersguide.com/wp-content/uploads/2015/07/Melbourne-street-art.jpg" alt="Melbourne Street Art" width="100" height="100">
+            <p>Melbourne is known for its dynamic arts scene, and one of the best places to explore this is in the city’s hidden laneways. These narrow streets are lined with vibrant street art, unique cafes, and boutique shops.</p>   
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Kangaroo Island, South Australia</h2>
+        <img src="https://th.bing.com/th/id/OIP.iDgxYSy6EPCtT6i1rWa3yQHaE7?rs=1&pid=ImgDetMain" alt="c">
+        <div class="destination-description">
+            <p>Kangaroo Island is an unspoiled paradise that offers some of the best wildlife experiences in Australia. Just off the coast of South Australia, it's home to kangaroos, koalas, sea lions, and diverse birdlife.</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <h2>Bondi Beach, Sydney</h2>
+        <img src="https://mattlauder.com.au/wp-content/uploads/2016/03/eb229.jpg" alt="Bondi Beach">
+        <div class="destination-description">
+            <p>Bondi Beach is an iconic Sydney destination, renowned for its golden sands, world-class surf, and vibrant beach culture.
