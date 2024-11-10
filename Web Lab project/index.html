@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Sweden</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-Screen Background Image with Faded Effect */
+body {
+    background-image: url('https://media.istockphoto.com/id/1014912224/photo/panoramic-view-of-stockholm-old-town-sweden.jpg?s=612x612&w=0&k=20&c=ct2zxsUNt6wHZ-SogMuixP7QKPmnORZyl0Kd9BW0Gj4=');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    position: relative;
+}
+
+/* Faded Overlay for Body Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Adjust for fade */
+    z-index: -1;
+}
+
+
+/* Explore Options Section */
+.explore-options {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(206, 209, 240, 0.8);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-top: 100px;
+}
+
+.explore-options h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Option Cards */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.option-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 180px;
+}
+
+.option-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.option-card:hover img {
+    transform: scale(1.1);
+}
+
+.option-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.option-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color : #333;
+    font-size: larger;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Navigation bar */
+
+.navbar{
+    background:url("images/headerpattern.jpg") repeat;
+   
+    display:flex;
+    align-items:center;
+    
+    margin:40px;
+}
+
+.container{
+    display:flex;
+   background-color:  #ffe5c3;
+    align-items: center;
+}
+
+.navbar .main-menu ul{
+display: flex;
+}
+
+
+
+.navbar ul li a{
+    padding: 10px 20px;
+    display:block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color:var(--primary-color);
+}
+
+*{
+   
+   margin:0;
+   padding: 0;
+}
+
+:root{
+   --primary-color:blue;
+   --light-color:#f4f4f6;
+   --dark-color:#111;
+}
+body{
+   font-family: 'Inter';
+   font-size: 20px;
+   line-height: 1.5;
+ background-color:cornflowerblue;
+ background-size:cover;
+}
+
+
+
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar">
+       
+        <div class="logo">
+            <a href="Mainpage.html">
+                <img src="images/logo.png" alt="logo" height="150px" width="150px" style="float:left;margin-right:10px;">
+            </a>
+        </div>
+
+        <div class="main-menu">
+            <ul>
+                <li>
+                    <a href="Mainpage.html">HOME</a>
+                </li>
+            
+                <li>
+                    <a href="index.html">INDEX</a>
+                    </li>
+                    <li>
+                <a href="about.html">ABOUT</a>
+            
+            </li>
+            <li>
+                <a href="festival.html">FESTIVALS</a>
+            </li>
+            <li>
+                <a href="tourism.html">TOURISM</a>
+            </li>
+            </ul>
+        </div>
+    
+</nav>
+    <!-- Explore Section -->
+    <section class="explore-options">
+        <h1>What Would You Like to Explore?</h1>
+        <div class="options-container">
+            <!-- Food Option -->
+            <div class="option-card">
+                <img src="https://sweden.se/_next/image?url=https%3A%2F%2Fcms.sweden.se%2Fapp%2Fuploads%2F2021%2F04%2Fmeatballs-1.jpg&w=1920&q=75" alt="Swedish Food">
+                <div class="overlay">
+                    <h2>Food</h2>
+                    <p>Discover Sweden's delicious culinary treats, from traditional dishes to modern flavors.</p>
+                </div>
+            </div>
+
+            <!-- Places Option -->
+            <div class="option-card">
+                <img src="https://sweden.se/_next/image?url=https%3A%2F%2Fcms.sweden.se%2Fapp%2Fuploads%2F2021%2F05%2Fhiking.jpg&w=1920&q=75" alt="Beautiful Places">
+                <div class="overlay">
+                    <h2>Places</h2>
+                    <p>Explore Sweden's most scenic landscapes, vibrant cities, and hidden gems.</p>
+                </div>
+            </div>
+
+            <!-- Culture Option -->
+            <div class="option-card">
+                <img src="https://sweden.se/_next/image?url=https%3A%2F%2Fcms.sweden.se%2Fapp%2Fuploads%2F2021%2F04%2Fhalloween.jpg&w=1920&q=75" alt="Swedish Culture">
+                <div class="overlay">
+                    <h2>Culture</h2>
+                    <p>Experience the rich cultural heritage, music, festivals, and art of Sweden.</p>
+                </div>
+            </div>
+
+            <!-- Language Option -->
+            <div class="option-card">
+                <img src="https://th.bing.com/th/id/OIP.ZLtPsP-P4vZvGom_k8FjOQHaKp?rs=1&pid=ImgDetMain" alt="Swedish Language">
+                <div class="overlay">
+                    <h2>Language</h2>
+                    <p>Learn the basics of the Swedish language and connect with locals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Explore Sweden. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
