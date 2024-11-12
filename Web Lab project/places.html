@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism in Australia - Destinations & Packages</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(https://th.bing.com/th/id/OIP.AQveTkgs075g1fROg0AxvgHaEo?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #0e0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: rgba(129, 214, 223, 0.6);
+    color: #191717;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #80e6f0;
+  }
+  
+  /* Destination Gallery Styling */
+  .destination-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+  }
+  
+  /* Destination Card Styling */
+  .destination-card {
+    background-color: #151515;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(12, 32, 99, 0.5);
+  }
+  
+  /* Card Image Styling */
+  .destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Card Content Styling */
+  .destination-card h2 {
+    font-size: 1.8rem;
+    color: #1a73e8;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .destination-card p {
+    font-size: 1rem;
+    color: #b7b1b1;
+    text-align: center;
+    padding: 0 1rem 1rem;
+  }
+  
+  /* Package Options Styling */
+  .package-options {
+    padding: 1rem;
+    border-top: 1px solid #777474;
+  }
+  
+  .package-options h3 {
+    font-size: 1.2rem;
+    color: #171515;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Package List Styling */
+  .package-options ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .package-options li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .package-options a {
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .package-options a:hover {
+    color: #1a73e8;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #3f3131;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+       
+    <div class="logo">
+        <a href="Mainpage.html">
+            <img src="images/logo.png" alt="logo" height="150px" width="150px" style="float:left;margin-right:10px;">
+        </a>
+    </div>
+
+    <div class="main-menu">
+        <ul>
+            <li>
+                <a href="Mainpage.html">HOME</a>
+            </li>
+        
+            <li>
+                <a href="index.html">INDEX</a>
+                </li>
+                <li>
+            <a href="about.html">ABOUT</a>
+        
+        </li>
+        <li>
+            <a href="festival.html">FESTIVALS</a>
+        </li>
+        <li>
+            <a href="tourism.html">TOURISM</a>
+        </li>
+         <li>
+                    <a href="places.html">PLACES</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT US</a>
+                </li>
+        </ul>
+    </div>
+
+</nav>
+  <header>
+    <h1>Explore Australia's Top Destinations</h1>
+    <p>Discover the beauty of Australia, from vibrant cities to breathtaking natural landscapes.</p>
+  </header>
+
+  <section class="destination-gallery">
+    <!-- Sydney -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.TsZeDFChfOQ9_eiAe_97OgHaEw?rs=1&pid=ImgDetMain" alt="Sydney Opera House">
+      <h2>Sydney</h2>
+      <p>Experience the iconic Sydney Opera House, Bondi Beach, and vibrant city life.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">City Explorer - $600</a></strong><br>Guided tours of the Opera House, Harbour Bridge, and Bondi Beach.</li>
+          <li><strong><a href="contact.html">Ultimate Sydney Experience - $900</a></strong><br>Includes beach tours, city sights, and evening events.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Great Barrier Reef -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.w4TfN1Wxge_Ep0UGXigJRAHaHa?w=691&h=691&rs=1&pid=ImgDetMain" alt="Great Barrier Reef">
+      <h2>Great Barrier Reef</h2>
+      <p>Explore the world’s largest coral reef with diverse marine life.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Reef Day Tour - $300</a></strong><br>Snorkeling and diving adventures with a guided marine tour.</li>
+          <li><strong><a href="contact.html">Reef Explorer - $800</a></strong><br>Multiple reef dives, snorkeling, and marine life education.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Melbourne -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.Vu4QDYB0cttICtGAxv7EcgHaE8?rs=1&pid=ImgDetMain" alt="Melbourne Cityscape">
+      <h2>Melbourne</h2>
+      <p>Enjoy Melbourne’s arts, cafes, and seaside attractions.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">City Highlights - $400</a></strong><br>Guided tours through Melbourne’s arts and laneways.</li>
+          <li><strong><a href="contact.html">Great Ocean Road - $700</a></strong><br>Drive along the scenic coast with stops at top landmarks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Uluru -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.FAftm7Hmn9djoYGan9YY-wHaFj?rs=1&pid=ImgDetMain" alt="Uluru">
+      <h2>Uluru</h2>
+      <p>Visit the sacred rock formation with sunrise and sunset views.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Outback Adventure - $500</a></strong><br>Guided tours of Uluru with evening stargazing.</li>
+          <li><strong><a href="contact.html">Uluru Extended - $1,200</a></strong><br>Includes visits to nearby national parks and cultural experiences.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tasmania -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.Z5Wep0MIGaL3GzK4UrM8bwHaEK?rs=1&pid=ImgDetMai" alt="Tasmanian Wilderness">
+      <h2>Tasmania</h2>
+      <p>Discover the wilderness, national parks, and historic towns.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Tasmanian Nature Tour - $750</a></strong><br>Explore pristine forests and spot local wildlife.</li>
+          <li><strong><a href="contact.html">Historic Tasmania - $950</a></strong><br>Visit historic towns and cultural heritage sites.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Blue Mountains -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.M2slXoZeJuNxY7jfNyth5wHaEo?rs=1&pid=ImgDetMain" alt="Blue Mountains">
+      <h2>Blue Mountains</h2>
+      <p>Enjoy panoramic views, waterfalls, and rugged cliffs.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Day Hike - $150</a></strong><br>A guided hike through top scenic spots.</li>
+          <li><strong><a href="contact.html">Overnight Adventure - $350</a></strong><br>Stay overnight and explore the region’s trails.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kangaroo Island -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.iDgxYSy6EPCtT6i1rWa3yQHaE7?rs=1&pid=ImgDetMain" alt="Kangaroo Island">
+      <h2>Kangaroo Island</h2>
+      <p>Wildlife haven with beaches, forests, and native animals.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Wildlife Tour - $600</a></strong><br>Guided tour with wildlife spotting and coastal walks.</li>
+          <li><strong><a href="contact.html">Island Escape - $1,100</a></strong><br>Includes beach exploration and forest hikes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gold Coast -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/OIP.bTfVoxioYyObYK1OXf5tyAHaEo?rs=1&pid=ImgDetMain" alt="Gold Coast">
+      <h2>Gold Coast</h2>
+      <p>Famous for beaches, theme parks, and vibrant nightlife.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Beach & Surf - $300</a></strong><br>Beach time with a surfing lesson included.</li>
+          <li><strong><a href="contact.html">Adventure Package - $850</a></strong><br>Visit theme parks and enjoy coastal activities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Whitsunday Islands -->
+    <div class="destination-card">
+      <img src="https://th.bing.com/th/id/R.2b4fa9a54a37e866303f8e62bfb6e931?rik=OTFNoorUXlaogQ&riu=http%3a%2f%2fwww.charteryachtsaustralia.com.au%2fwp-content%2fuploads%2f2013%2f12%2fhayman-island-pool.jpg&ehk=PjYCSFkEa1UKAPLngcwJkFfmswwxDa0zFJMfSfu7zzM%3d&risl=&pid=ImgRaw&r=0" alt="Whitsunday Islands">
+      <h2>Whitsunday Islands</h2>
+      <p>Beautiful islands with white sand beaches and clear waters.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Island Hopper - $700</a></strong><br>Explore multiple islands with beach and snorkeling stops.</li>
+          <li><strong><a href="contact.html">Luxury Cruise - $1,500</a></strong><br>Luxury sailing with gourmet dining and island visits.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Perth -->
+    <div class="destination-card">
+      <img src="https://perthtouristcentre.com.au/wp-content/uploads/2017/06/perth-cityscape.jpg" alt="Perth">
+      <h2>Perth</h2>
+      <p>Western Australia's largest city with beaches and parks.</p>
+      <div class="package-options">
+        <h3>Available Packages:</h3>
+        <ul>
+          <li><strong><a href="contact.html">Perth Highlights - $400</a></strong><br>Tour of Perth’s beaches, parks, and top landmarks.</li>
+          <li><strong><a href="contact.html">West Coast Adventure - $950</a></strong><br>Explore Perth’s coastlines, vineyards, and wildlife.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

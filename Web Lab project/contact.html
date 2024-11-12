@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="style3.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Australia Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #004d7a;
+}
+
+a {
+    color: #004d7a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #004d7a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #003a5d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #eaf1f7;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* Contact Details Section */
+.contact-details {
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+}
+
+.contact-details ul {
+    padding-left: 20px;
+}
+
+.contact-details .social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-details .live-chat-btn {
+    background-color: #28a745;
+    margin-top: 20px;
+}
+
+/* Quick Links */
+.quick-links {
+    background-color: #eaf1f7;
+    text-align: center;
+}
+
+.quick-links ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.quick-links ul li a {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+    
+}
+.align{
+    margin:50px;
+    padding:10px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+        <div class="logo">
+            <a href="Mainpage.html">
+                <img src="images/logo.png" alt="logo" height="150px" width="150px" style="float:left;margin-right:10px;">
+            </a>
+        </div>
+
+        <div class="main-menu">
+            <ul>
+                <li>
+                    <a href="Mainpage.html">HOME</a>
+                </li>
+            
+                <li>
+                    <a href="index.html">INDEX</a>
+                    </li>
+                    <li>
+                <a href="about.html">ABOUT</a>
+            
+            </li>
+            <li>
+                <a href="festival.html">FESTIVALS</a>
+            </li>
+            <li>
+                <a href="tourism.html">TOURISM</a>
+            </li>
+            <li>
+                <a href="places.html">PLACES</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT US</a>
+            </li>
+            </ul>
+        </div>
+    
+</nav>
+    <header>
+        <div class="container">
+            <h1>Contact Us – Your Adventure Awaits!</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            
+                <h2>🌏 Let’s Explore Australia Together</h2>
+                <p>Whether you're planning your next Australian adventure or have questions about our incredible destinations, we’re here to help! Let us make your dream vacation come true, from the Great Barrier Reef to the outback and beyond.</p>
+                <p><strong>Ready to start your journey?</strong> Fill out the form below or reach out to us through any of the methods listed. Our friendly team is just a message away from helping you plan the trip of a lifetime.</p>
+           
+        </section>
+
+        <section class="contact-form">
+            <div class="align">
+                <h3>How Can We Help?</h3>
+                <form action="#" method="POST">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number (Optional):</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contact-method">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="messenger">Messenger</option>
+                    </select>
+
+                    <label for="inquiry-type">Type of Inquiry:</label>
+                    <select id="inquiry-type" name="inquiry-type">
+                        <option value="tour">Tour Packages</option>
+                        <option value="tips">Travel Tips & Information</option>
+                        <option value="custom">Custom Itineraries</option>
+                        <option value="general">General Questions</option>
+                    </select>
+
+                    <label for="message">Tell Us More (Optional):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            
+        </section>
+
+        <section class="contact-details">
+           
+                <h3>Contact Details:</h3>
+                <p><strong>Email Us:</strong></p>
+                <ul>
+                    <li>General Inquiries: <a href="mailto:info@tourism-australia.com.au">info@tourism-australia.com.au</a></li>
+                    <li>Group Bookings & Events: <a href="mailto:groups@tourism-australia.com.au">groups@tourism-australia.com.au</a></li>
+                    <li>Press & Media: <a href="mailto:media@tourism-australia.com.au">media@tourism-australia.com.au</a></li>
+                </ul>
+
+                <p><strong>Call Us:</strong></p>
+                <p>Hotline: +61 2 1234 5678</p>
+                <p>Office Hours: Mon-Fri 9:00 AM - 6:00 PM (AEST)</p>
+
+                <p><strong>Visit Us:</strong></p>
+                <p>123 Aussie Tourism Lane, Sydney, NSW, 2000, Australia</p>
+
+                <h3>Follow Us:</h3>
+                <ul class="social-media">
+                    <li><a href="https://instagram.com/ExploreAustralia" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/AussieAdventures" target="_blank">Twitter</a></li>
+                    <li><a href="https://facebook.com/TourismAustralia" target="_blank">Facebook</a></li>
+                    <li><a href="https://pinterest.com/VisitAustralia" target="_blank">Pinterest</a></li>
+                </ul>
+
+                <button class="live-chat-btn">💬 Live Chat with Us!</button>
+           
+        </section>
+
+        <section class="quick-links">
+            
+                <h3>Quick Links:</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+           
+        </section>
+    </main>
+</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WEB LAB PROJECT. All rights reserved.</p>
+    
+    </footer>
+
+</body>
+</html>

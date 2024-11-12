@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australia Tourism Account Creation</title>
+  <link rel="stylesheet" href="contact page.css">
+  <style>
+    /* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp2684726.jpg'); /* Replace with an actual URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ffffff;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better readability */
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(5px);
+  }
+  
+  h1 {
+    color: #FFCC00;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  p {
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    color: #FFCC00;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #FF6B6B, #FFD93D);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.4s;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #FFD93D, #FF6B6B);
+  }
+  
+  .login-prompt {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #f1f1f1;
+  }
+  
+  .login-prompt a {
+    color: #FFD93D;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  ::placeholder {
+    color: #666;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Create Your Account</h1>
+    <p>Join us for an unforgettable experience exploring Australia!</p>
+    <form action="#" method="POST">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="interests">Select Your Interests</label>
+      <select id="interests" name="interests" required>
+        <option value="beaches">Beaches</option>
+        <option value="festival">festival</option>
+        <option value="places">Outback Adventures</option>
+        <option value="city-life">City Life</option>
+        <option value="culture">Culture & History</option>
+      </select>
+
+     <a href="login.html"> <h1>Create Account </h1></a>
+
+      <p class="login-prompt">Already have an account? <a href="login.html">Login here</a>.</p>
+      
+    </form>
+  </div>
+
+</body>
+</html>

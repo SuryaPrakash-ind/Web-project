@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Explore Australia</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling with Background Image */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('https://th.bing.com/th/id/R.95927a5e711e88e79c8ebcf37030be12?rik=gVUpm1Dhlj5Y3A&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2f3%2f8%2f103719.jpg&ehk=ewXgmOJMW3hoGdS6Iqtjt7xbqsaLdg%2bqP219QlzePJw%3d&risl=&pid=ImgRaw&r=0'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  /* Overlay to Darken Background for Readability */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+    z-index: -1;
+  }
+  
+  /* Login Container Styling */
+  .login-container {
+    background: rgba(34, 33, 33, 0.9); /* Semi-transparent white */
+    padding: 2.5rem;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0px 8px 16px rgba(87, 87, 87, 0.3);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    color: #007acc;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-container p {
+    font-size: 1rem;
+    color: #9b9696;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #aaa8a8;
+    margin-bottom: 0.3rem;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    width: 100%;
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #007acc;
+    box-shadow: 0px 0px 8px rgba(0, 122, 204, 0.6);
+  }
+  
+  /* Button Styling */
+  .login-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .login-btn:hover {
+    background-color: #005999;
+    transform: scale(1.05);
+  }
+
+  
+  
+  /* Register Prompt */
+  .register-prompt {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #484747;
+  }
+  
+  .register-prompt a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-prompt a:hover {
+    color: #005999;
+    text-decoration:underline;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome to Explore Australia</h2>
+    <p>Please login to continue</p>
+    <form action="dashboard.html" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required placeholder="Enter your username">
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required placeholder="Enter your password">
+      
+     <a href="Mainpage.html" >
+      <h1>Login<h1>
+    </a>
+    </form>
+    <p class="register-prompt">Don't have an account? <a href="create.html">Create an account</a></p>
+  </div>
+</body>
+</html>
